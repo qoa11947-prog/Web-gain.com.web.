@@ -1,0 +1,101 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-gain</title>
+    <style>
+        :root {
+            --bg1: #5300f9;
+            --bg2: #fcabff;
+            --card: rgba(255, 255, 255, 0.85);
+            --text: #1e1254;
+            --accent: #4b1f9e;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; min-height: 100%; font-family: Inter, system-ui, sans-serif; }
+        body {
+            background: linear-gradient(180deg, var(--bg1), var(--bg2));
+            display: flex;
+            justify-content: center;
+            padding: 24px;
+            color: var(--text);
+        }
+        .page {
+            width: min(900px, 100%);
+            background: rgba(255, 255, 255, 0.9); /* see-through */
+    /* keep border-radius, shadow, overflow as is */
+            border-radius: 16px;
+            box-shadow: 0 16px 45px rgba(0,0,0,0.18);
+            overflow: hidden;
+        header { background: #ffffff; padding: 24px 28px; border-bottom: 1px solid #eee; }
+        header h1 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.3rem); color: #2f0d66; }
+        header p { margin: 6px 0 0; color: #4d2d9a; font-size: 1rem; }
+        .content { padding: 22px 28px; }
+        .intro { background: #f5ebff; padding: 14px 16px; border-left: 4px solid #7b38f0; margin-bottom: 16px; border-radius: 8px; }
+        .intro strong { color: #4d1f8d; }
+        .section { margin-top: 14px; }
+        .section h2 { margin: 0 0 8px; font-size: 1.05rem; color: #361d86; }
+        .section ul { padding-left: 20px; margin: 0; }
+        .section li { margin-bottom: 6px; }
+        .contact { margin-top: 16px; background: #fff; border: 1px solid #e8d9ff; border-radius: 10px; padding: 14px; }
+        .contact p { margin: 4px 0; font-size: 0.96rem; }
+        .contact .links { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; }
+        .contact .links a { text-decoration: none; background: #f7f1ff; border: 1px solid #e1d2ff; border-radius: 8px; padding: 6px 10px; color: #2f0d66; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; }
+        .contact .links a:hover { background: #f0e4ff; }
+        .footer { text-align: center; margin-top: 18px; color: #57238f; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+         <button class="homebutton" onclick="window.location.href='index.html'">Home</button><button onclick="window.location.href='hof.html'">Web-gain hall of fame</button><button onclick="window.location.href='finance.html'">Prices</button>
+         <style>
+            .homebutton{
+                 background: transparent;
+                 border: 1px solid #e1d2ff;
+                 border-radius: 8px;
+                 padding: 6px 10px;
+                 color: #2f0d66;
+                 font-weight: 600;
+                 display: inline-flex;
+                 align-items: center;
+                 gap: 8px;
+                color: orange;
+            }
+         </style>
+        <header>
+            <h1>Web-Gain</h1>
+            <p style="margin: 6px 0 0; color: #6b2fbb; font-style: italic;">At your service.</p>
+        </header>
+        <section class="content">
+            <div class="intro">
+                <p><strong>What is Web-gain?</strong> We build websites by your instructions, and we revise until you're happy.</p>
+            </div>
+            <div class="section">
+                <h2>How it works</h2>
+                <ul>
+                    <li>1. We gather your project details (colors, style, content, pages).</li>
+                    <li>2. We set a timeline and agree on your deadline.</li>
+                    <li>3. We propose a budget and deliver the first draft.</li>
+                    <li>4. We collect feedback and finalize your site.</li>
+                </ul>
+            </div>
+            <div class="section contact">
+                <h2>Contact</h2>
+                <p><strong>Bibi Amina Hoosen</strong> – Founder</p>
+                <div class="links">
+                    <a href="https://wa.me/27769838597" target="_blank" rel="noreferrer noopener">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="20" height="20" style="margin-right:6px;"> WhatsApp: +27 76 983 8597
+                    </a>
+                    <a href="mailto:webdagainda@gmail.com">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail" width="20" height="20" style="margin-right:6px;"> Gmail: webdagainda@gmail.com
+
+                    </a>
+                </div>
+            </div>
+            <p class="footer">17 March 2026 · Web-gain. At your service.</p>
+        </section>
+    </main>
+</body>
+</html>
