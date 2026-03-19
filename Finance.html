@@ -1,0 +1,90 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finance</title>
+        <style>
+            :root {
+                --bg1: green;
+                --bg2: white;
+                --text: rgb(0, 79, 59);
+            }
+            .page {
+                min-height: 100vh;
+                background: linear-gradient(to bottom, var(--bg1), var(--bg2));
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 40px 20px;
+                color: var(--text);
+            }
+            .home-button {
+                width: auto;
+                color: black;
+            }
+            .finance-button {
+                width: auto;
+                color: orange;
+            }
+            .yay-button{
+                width:auto;
+                color: black
+            }
+            .button-group {
+                display: inline-flex;
+                gap: 10px;
+                flex-wrap: nowrap;
+                gap: 10px;
+                justify-content: center;
+                margin-bottom:20px;
+            }
+            .table {
+                width: min(600px, 100%);
+                border-collapse: collapse;
+                margin-top: 20px;
+                border:#000000 1px solid;
+                border-radius: 8px;
+                overflow: hidden;
+                padding: 10px; color:aliceblue
+            }
+            </style>
+            </head>
+            <head>
+            <body>
+                <div class="page">
+                    <div class="button-group">
+                        <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+                        <button class="yay-button" onclick="window.location.href='yay.html'">Web-gain hall of fame</button>
+                         <button class="finance-button" onclick="window.location.href='finance.html'">Prices</button>
+                    </div>
+                <h1>Prices</h1>
+                <table border="1" class="table">
+                    <tr>
+                        <th>Service</th>
+                        <th>Contents </th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Basic </td>
+                        <td> 3 pages: Home, contents, about.</td>
+                        <td>R3,160</td>
+                    </tr>
+                    <tr>
+                        <td>Standard</td>
+                        <td> 5 pages: Home, contents, about, services, contact.</td>
+                        <td>R5,200</td>
+                    </tr>
+                    <tr>
+                        <td>Complex</td>
+                        <td> 10 pages: Home, contents, about, services, contact, portfolio, testimonials, blog, FAQ, privacy policy.</td>
+                        <td>R10,400</td>
+                    </tr>
+                    <p>How this works: These are the actual prices, but the way Web-gain works is we will bargain until you are happy with your price, we will meet in the middle of your price and ours!</p>
+                </table>
+                </div>
+            </body>
+            </head>
+        </html>
+                
